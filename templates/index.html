@@ -1,0 +1,17 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+    <h1>Rock, Paper, Scissors!</h1>
+
+    </head>
+    <body>
+        <form action ="{{url_for('add_choice', choice_1 = foo, choice_2 = foo)}}"
+        method = "post">
+        <label for="choice">Select between Rock Paper and Scissors:</label>
+        <input type="text" id="choice" name="choice"><br><br>
+        <input type="submit" value="Submit">
+        </form>
+
+    </body>
+{% endblock %}
